@@ -27,13 +27,7 @@ export const educationByLang: Record<Lang, EducationEntry[]> = {
       degree: "DEUG — Sciences Mathématiques et Informatique",
       institution: "Faculté Polydisciplinaire de Ouarzazate (FPO)",
       location: "Ouarzazate, Maroc",
-    },
-    {
-      ...SHARED.bac,
-      degree: "Baccalauréat — Sciences Mathématiques A",
-      institution: "Lycée Salah Eddine Ayoubi",
-      location: "Tinghir, Maroc",
-    },
+    }
   ],
   en: [
     {
