@@ -289,7 +289,6 @@ export function Education() {
 
 function Milestone({
   edu,
-  index,
   point,
   reducedMotion,
   parallaxEnabled,

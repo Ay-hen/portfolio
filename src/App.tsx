@@ -4,7 +4,6 @@ import { RootLayout } from "./layouts/RootLayout";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { IntroOverlay } from "./intro/IntroOverlay";
-import { isIntroCompleted, markIntroCompleted } from "./intro/introStorage";
 
 type IntroMode = "full" | "short" | "hidden";
 
@@ -21,20 +20,6 @@ export default function App() {
     }
   }, []);
 
-  // const [introMode, setIntroMode] = useState<IntroMode>(() =>
-  //   isIntroCompleted() ? "short" : "full"
-  // );
-
-  // const handleIntroFinished = useCallback((scrollTo?: string) => {
-  //   markIntroCompleted();
-  //   setIntroMode("hidden");
-  //   if (scrollTo) {
-  //     // wait a frame for the portfolio to be visible before scrolling
-  //     requestAnimationFrame(() => {
-  //       document.getElementById(scrollTo)?.scrollIntoView({ behavior: "smooth" });
-  //     });
-  //   }
-  // }, []);
 
   const handleReplayIntro = useCallback(() => {
     setIntroMode("full");
