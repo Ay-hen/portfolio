@@ -237,6 +237,7 @@ export function Education() {
                   x2="0"
                   y2="1"
                 >
+                  
                   <stop
                     offset="0%"
                     stopColor="var(--color-mint)"
