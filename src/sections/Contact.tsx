@@ -37,17 +37,17 @@ export function Contact() {
         />
 
         <div className="grid gap-10 lg:grid-cols-2">
-          <ul className="space-y-3">
+          <ul className="min-w-0 space-y-3">
             {contactItems.map(({ icon: Icon, label, href }) => (
-              <li key={label}>
+              <li key={label} className="min-w-0">
                 <a
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noreferrer" : undefined}
-                  className="flex items-center gap-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-5 py-4 text-sm text-[var(--text)] transition-colors hover:border-[var(--color-primary-light)]"
+                  className="flex min-w-0 items-center gap-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-5 py-4 text-sm text-[var(--text)] transition-colors hover:border-[var(--color-primary-light)]"
                 >
-                  <Icon size={17} className="text-[var(--color-primary-light)]" />
-                  {label}
+                  <Icon size={17} className="shrink-0 text-[var(--color-primary-light)]" />
+                  <span className="min-w-0 [overflow-wrap:anywhere]">{label}</span>
                 </a>
               </li>
             ))}
