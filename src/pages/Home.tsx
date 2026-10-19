@@ -4,6 +4,7 @@ import { Experience } from "../sections/Experience";
 import { Projects } from "../sections/Projects";
 import { TechStack } from "../sections/TechStack";
 import { Education } from "../sections/Education";
+import { LearningJourney } from "../sections/LearningJourney";
 import { Resume } from "../sections/Resume";
 import { Contact } from "../sections/Contact";
 
@@ -25,6 +26,9 @@ export function Home() {
       </div>
       <div className="border-t border-[var(--border)]">
         <Education />
+      </div>
+      <div className="border-t border-[var(--border)]">
+        <LearningJourney />
       </div>
       <div className="border-t border-[var(--border)]">
         <Resume />
