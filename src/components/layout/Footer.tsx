@@ -4,7 +4,7 @@ import { Container } from "../ui/Container";
 import { useLanguage } from "../../i18n/LanguageContext";
 import { profileByLang } from "../../data/profile";
 
-export function Footer({ onReplayIntro }: { onReplayIntro?: () => void }) {
+export function Footer() {
   const { lang, t } = useLanguage();
   const profile = profileByLang[lang];
 
@@ -15,14 +15,6 @@ export function Footer({ onReplayIntro }: { onReplayIntro?: () => void }) {
           © {new Date().getFullYear()} {profile.name} — {t("footer.builtWith")}
         </p>
         <div className="flex items-center gap-4">
-          {onReplayIntro && (
-            <button
-              onClick={onReplayIntro}
-              className="font-mono text-xs text-[var(--muted)] underline-offset-4 hover:text-[var(--text)] hover:underline"
-            >
-              {t("footer.replayIntro")}
-            </button>
-          )}
           <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:text-[var(--text)]">
             <GithubIcon size={16} />
           </a>
