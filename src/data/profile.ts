@@ -17,7 +17,6 @@ const SHARED = {
     "MongoDB",
     "Kotlin / Android",
   ],
-  cvFile: "/cv/HENNANI_AYOUB_BRAHIM_CV.pdf",
 };
 
 export const profileByLang: Record<Lang, Profile> = {
