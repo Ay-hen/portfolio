@@ -89,7 +89,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "resume.eyebrow": "Document",
     "resume.title": "Resume",
     "resume.description":
-      "This page mirrors my actual CV. Download the PDF version to share it.",
+      "This section mirrors my CV. Download it in English or in French — the preview follows the selected language.",
+    "resume.downloads": "CV downloads",
+    "resume.openInTab": "Open CV in a new tab",
     "resume.download": "Download PDF",
     "resume.replaceHint": "Replace",
     "resume.replaceHintEnd": "with your CV exported from the LaTeX file.",
@@ -210,7 +212,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "resume.eyebrow": "Document",
     "resume.title": "CV",
     "resume.description":
-      "Le contenu de cette page reflète directement mon CV. Téléchargez la version PDF pour la partager.",
+      "Cette section reflète mon CV. Téléchargez-le en anglais ou en français — l'aperçu suit la langue sélectionnée.",
+    "resume.downloads": "Téléchargements du CV",
+    "resume.openInTab": "Ouvrir le CV dans un nouvel onglet",
     "resume.download": "Télécharger le PDF",
     "resume.replaceHint": "Remplacez",
     "resume.replaceHintEnd": "par votre CV exporté depuis le fichier LaTeX.",
