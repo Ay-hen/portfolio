@@ -86,12 +86,21 @@ export const translations: Record<Lang, Record<string, string>> = {
     "education.title": "Education",
     "education.subtitle": "Where curiosity became a craft.",
 
+    "journey.eyebrow": "Always learning",
+    "journey.title": "My Learning Journey",
+    "journey.intro":
+      "I'm passionate about building useful software and continuously expanding my technical knowledge. My current journey focuses on Full Stack Java Development and DevOps, while my curiosity about Artificial Intelligence drives me to explore AI Engineering and what it makes possible.",
+    "journey.legend.aria": "Progress legend",
+    "journey.legend.notCompleted": "In progress or planned",
+    "journey.status.completed": "Completed",
+    "journey.status.inProgress": "In progress",
+    "journey.status.planned": "Planned",
+    "journey.completedLabel": "topics completed",
+
     "resume.eyebrow": "Document",
     "resume.title": "Resume",
     "resume.description":
-      "This section mirrors my CV. Download it in English or in French — the preview follows the selected language.",
-    "resume.downloads": "CV downloads",
-    "resume.openInTab": "Open CV in a new tab",
+      "This page mirrors my actual CV. Download the PDF version to share it.",
     "resume.download": "Download PDF",
     "resume.replaceHint": "Replace",
     "resume.replaceHintEnd": "with your CV exported from the LaTeX file.",
@@ -115,15 +124,10 @@ export const translations: Record<Lang, Record<string, string>> = {
       "Message sending isn't configured on the server yet — feel free to email me directly in the meantime.",
 
     "footer.builtWith": "built with React & TypeScript.",
-    "footer.replayIntro": "Replay intro",
 
     "notfound.title": "Page not found",
     "notfound.description": "The requested route doesn't exist anymore.",
     "notfound.cta": "Back to home",
-
-    "intro.skip": "Skip intro →",
-    "intro.loading": "Loading Ayoub's portfolio...",
-    "intro.granted": "Access granted.",
   },
   fr: {
     "nav.about": "À propos",
@@ -209,12 +213,21 @@ export const translations: Record<Lang, Record<string, string>> = {
     "education.title": "Éducation",
     "education.subtitle": "Là où la curiosité est devenue un métier.",
 
+    "journey.eyebrow": "Toujours en apprentissage",
+    "journey.title": "Mon parcours d'apprentissage",
+    "journey.intro":
+      "Je suis passionné par la création de logiciels utiles et par l'enrichissement continu de mes connaissances techniques. Mon parcours actuel se concentre sur le développement Full Stack Java et le DevOps, tandis que ma curiosité pour l'intelligence artificielle me pousse à explorer l'ingénierie de l'IA et ses possibilités.",
+    "journey.legend.aria": "Légende de progression",
+    "journey.legend.notCompleted": "En cours ou prévu",
+    "journey.status.completed": "Terminé",
+    "journey.status.inProgress": "En cours",
+    "journey.status.planned": "Prévu",
+    "journey.completedLabel": "sujets terminés",
+
     "resume.eyebrow": "Document",
     "resume.title": "CV",
     "resume.description":
-      "Cette section reflète mon CV. Téléchargez-le en anglais ou en français — l'aperçu suit la langue sélectionnée.",
-    "resume.downloads": "Téléchargements du CV",
-    "resume.openInTab": "Ouvrir le CV dans un nouvel onglet",
+      "Le contenu de cette page reflète directement mon CV. Téléchargez la version PDF pour la partager.",
     "resume.download": "Télécharger le PDF",
     "resume.replaceHint": "Remplacez",
     "resume.replaceHintEnd": "par votre CV exporté depuis le fichier LaTeX.",
@@ -238,14 +251,9 @@ export const translations: Record<Lang, Record<string, string>> = {
       "L'envoi de message n'est pas encore configuré côté serveur — écrivez-moi directement en attendant.",
 
     "footer.builtWith": "construit avec React & TypeScript.",
-    "footer.replayIntro": "Revoir l'intro",
 
     "notfound.title": "Page introuvable",
     "notfound.description": "La route demandée n'existe pas ou plus.",
     "notfound.cta": "Retour à l'accueil",
-
-    "intro.skip": "Passer l'intro →",
-    "intro.loading": "Chargement du portfolio d'Ayoub...",
-    "intro.granted": "Accès autorisé.",
   },
 };
