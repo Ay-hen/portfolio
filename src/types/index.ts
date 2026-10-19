@@ -14,6 +14,7 @@ export interface Profile {
   linkedin: string;
   summary: string;
   heroKeywords: string[];
+  cvFile: string;
 }
 
 export interface ExperienceEntry {
@@ -84,4 +85,24 @@ export interface SkillNode {
   icon: string;
   descriptionEn: string;
   descriptionFr: string;
+}
+
+/**
+ * Status of a single learning topic.
+ * Only `completed` renders as a filled green circle; `in-progress` and
+ * `planned` both render as an empty circle (they differ by their status text).
+ */
+export type LearningStatus = "completed" | "in-progress" | "planned";
+
+export interface LearningItem {
+  id: string;
+  label: string;
+  status: LearningStatus;
+}
+
+export interface LearningPath {
+  id: "fullstack-java" | "devops" | "ai";
+  title: string;
+  description: string;
+  items: LearningItem[];
 }
