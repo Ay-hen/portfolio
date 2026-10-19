@@ -37,7 +37,7 @@ const learningPathDefs: LearningPathDef[] = [
     items: [
       {
         id: "java-fundamentals",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Java fundamentals and object-oriented programming",
           fr: "Fondamentaux de Java et programmation orientée objet",
@@ -45,7 +45,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "java-advanced",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Advanced Java and clean code principles",
           fr: "Java avancé et principes du clean code",
@@ -53,7 +53,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "spring-boot",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Spring Boot and REST API development",
           fr: "Spring Boot et développement d'API REST",
@@ -61,7 +61,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "spring-security",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Spring Security and authentication",
           fr: "Spring Security et authentification",
@@ -69,7 +69,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "sql",
-        status: "planned",
+        status: "completed",
         label: {
           en: "SQL and database management",
           fr: "SQL et gestion de bases de données",
@@ -77,7 +77,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "angular",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Frontend integration with Angular",
           fr: "Intégration frontend avec Angular",
@@ -85,7 +85,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "testing-architecture",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Testing, software architecture, and best practices",
           fr: "Tests, architecture logicielle et bonnes pratiques",
@@ -114,7 +114,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "git",
-        status: "planned",
+        status: "completed",
         label: {
           en: "Git and GitHub workflows",
           fr: "Workflows Git et GitHub",
@@ -122,7 +122,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "docker",
-        status: "planned",
+        status: "in-progress",
         label: {
           en: "Docker and containerization",
           fr: "Docker et conteneurisation",
@@ -130,7 +130,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "cicd",
-        status: "planned",
+        status: "in-progress",
         label: {
           en: "CI/CD pipelines",
           fr: "Pipelines CI/CD",

@@ -26,35 +26,44 @@ const STATUS_LABEL_KEYS: Record<LearningStatus, string> = {
 };
 
 /**
- * Green filled circle = completed. Empty circle = anything else.
+ * completed   -> green filled circle
+ * in-progress -> empty circle with a green border
+ * planned     -> empty circle with a neutral border
  * Decorative only (aria-hidden): the status is always also written as text.
  */
 function StatusDot({
-  completed,
+  status,
   className = "",
 }: {
-  completed: boolean;
+  status: LearningStatus;
   className?: string;
 }) {
+  const style =
+    status === "completed"
+      ? {
+          background: "var(--color-mint)",
+          borderColor: "color-mix(in srgb, var(--color-mint) 65%, black)",
+        }
+      : status === "in-progress"
+        ? {
+            background: "var(--surface)",
+            borderColor: "color-mix(in srgb, var(--color-mint) 80%, black)",
+          }
+        : {
+            background: "var(--surface)",
+            borderColor: "var(--muted)",
+          };
+
   return (
     <span
       aria-hidden
       className={`block h-4 w-4 shrink-0 rounded-full border-2 ${className}`}
-      style={
-        completed
-          ? {
-              background: "var(--color-mint)",
-              borderColor:
-                "color-mix(in srgb, var(--color-mint) 65%, black)",
-            }
-          : {
-              background: "var(--surface)",
-              borderColor: "var(--muted)",
-            }
-      }
+      style={style}
     />
   );
 }
+
+const LEGEND_STATUSES: LearningStatus[] = ["completed", "in-progress", "planned"];
 
 export function LearningJourney() {
   const { lang, t } = useLanguage();
@@ -74,14 +83,12 @@ export function LearningJourney() {
           aria-label={t("journey.legend.aria")}
           className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-[var(--muted)]"
         >
-          <li className="flex items-center gap-2">
-            <StatusDot completed />
-            {t("journey.status.completed")}
-          </li>
-          <li className="flex items-center gap-2">
-            <StatusDot completed={false} />
-            {t("journey.legend.notCompleted")}
-          </li>
+          {LEGEND_STATUSES.map((status) => (
+            <li key={status} className="flex items-center gap-2">
+              <StatusDot status={status} />
+              {t(STATUS_LABEL_KEYS[status])}
+            </li>
+          ))}
         </ul>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -148,7 +155,7 @@ export function LearningJourney() {
                           />
                         )}
                         <StatusDot
-                          completed={isCompleted}
+                          status={item.status}
                           className="relative z-10 mt-[3px]"
                         />
                         <div className="min-w-0">
