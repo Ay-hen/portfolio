@@ -6,10 +6,13 @@ import { Button, LinkButton } from "../components/ui/Button";
 import { ApiConsole } from "../components/ui/ApiConsole";
 import { useLanguage } from "../i18n/LanguageContext";
 import { profileByLang } from "../data/profile";
+import { cvFiles } from "../data/cv";
 
 export function Hero() {
   const { lang, t } = useLanguage();
   const profile = profileByLang[lang];
+  // Shortcut to the CV matching the selected language; both are in the Resume section.
+  const cv = cvFiles[lang];
 
   return (
     <section id="top" className="relative overflow-hidden pt-14 pb-20 sm:pt-20 sm:pb-28">
@@ -58,8 +61,8 @@ export function Hero() {
             >
               {t("hero.cta.projects")} <ArrowRight size={16} />
             </Button>
-            <LinkButton href={profile.cvFile} download variant="outline">
-              <Download size={16} /> {t("hero.cta.cv")}
+            <LinkButton href={cv.href} download={cv.downloadName} variant="outline">
+              <Download size={16} className="shrink-0" /> <span lang={cv.lang}>{cv.label}</span>
             </LinkButton>
             <LinkButton href="#contact" variant="ghost">
               <Mail size={16} /> {t("hero.cta.contact")}
