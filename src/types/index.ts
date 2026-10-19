@@ -14,7 +14,6 @@ export interface Profile {
   linkedin: string;
   summary: string;
   heroKeywords: string[];
-  cvFile: string;
 }
 
 export interface ExperienceEntry {
