@@ -107,7 +107,21 @@ const learningPathDefs: LearningPathDef[] = [
           fr: "Tests, architecture logicielle et bonnes pratiques",
         },
       },
+    ],
+  },
 
+  // 2. Backend & Distributed Systems
+  {
+    id: "backend-distributed-systems",
+    title: {
+      en: "Backend & Distributed Systems",
+      fr: "Backend et systèmes distribués",
+    },
+    description: {
+      en: "Building scalable, real-time, and event-driven backend systems.",
+      fr: "Concevoir des systèmes backend évolutifs, temps réel et événementiels.",
+    },
+    items: [
       {
         id: "kafka",
         status: "in-progress",
@@ -148,22 +162,6 @@ const learningPathDefs: LearningPathDef[] = [
           fr: "Fondamentaux des systèmes distribués",
         },
       },
-    ],
-  },
-
-  // 2. Backend & Distributed Systems
-  {
-    id: "backend-distributed-systems",
-    title: {
-      en: "Backend & Distributed Systems",
-      fr: "Backend et systèmes distribués",
-    },
-    description: {
-      en: "Building scalable, real-time, and event-driven backend systems.",
-      fr: "Concevoir des systèmes backend évolutifs, temps réel et événementiels.",
-    },
-    items: [
-      
     ],
   },
 
