@@ -6,24 +6,24 @@ type Localized = Record<Lang, string>;
 interface LearningItemDef {
   id: string;
   /**
-   * ✏️ UPDATE THIS to reflect your real progress.
-   *   "completed"   -> green filled circle
-   *   "in-progress" -> empty circle, "In progress"
-   *   "planned"     -> empty circle, "Planned"
-   * Nothing is marked as completed by default.
+   * Update this to reflect your real progress:
+   * "completed"   -> green filled circle
+   * "in-progress" -> empty circle, "In progress"
+   * "planned"     -> empty circle, "Planned"
    */
   status: LearningStatus;
   label: Localized;
 }
 
 interface LearningPathDef {
-  id: LearningPath["id"];
+  id: string;
   title: Localized;
   description: Localized;
   items: LearningItemDef[];
 }
 
 const learningPathDefs: LearningPathDef[] = [
+  // 1. Full Stack Java Development
   {
     id: "fullstack-java",
     title: {
@@ -31,8 +31,8 @@ const learningPathDefs: LearningPathDef[] = [
       fr: "Développement Full Stack Java",
     },
     description: {
-      en: "Building robust back ends and modern interfaces.",
-      fr: "Concevoir des back ends robustes et des interfaces modernes.",
+      en: "Building robust back ends and modern web interfaces.",
+      fr: "Concevoir des back ends robustes et des interfaces web modernes.",
     },
     items: [
       {
@@ -71,8 +71,8 @@ const learningPathDefs: LearningPathDef[] = [
         id: "sql",
         status: "completed",
         label: {
-          en: "SQL and database management",
-          fr: "SQL et gestion de bases de données",
+          en: "SQL and relational database management",
+          fr: "SQL et gestion des bases de données relationnelles",
         },
       },
       {
@@ -87,16 +87,16 @@ const learningPathDefs: LearningPathDef[] = [
         id: "angular",
         status: "completed",
         label: {
-          en: "Frontend integration with Angular",
-          fr: "Intégration frontend avec Angular",
+          en: "Frontend development with Angular",
+          fr: "Développement frontend avec Angular",
         },
       },
       {
         id: "reactjs",
         status: "completed",
         label: {
-          en: "ReactJS",
-          fr: "ReactJS",
+          en: "Frontend development with React",
+          fr: "Développement frontend avec React",
         },
       },
       {
@@ -107,34 +107,74 @@ const learningPathDefs: LearningPathDef[] = [
           fr: "Tests, architecture logicielle et bonnes pratiques",
         },
       },
+    ],
+  },
+
+  // 2. Backend & Distributed Systems
+  {
+    id: "backend-distributed-systems",
+    title: {
+      en: "Backend & Distributed Systems",
+      fr: "Backend et systèmes distribués",
+    },
+    description: {
+      en: "Building scalable, real-time, and event-driven backend systems.",
+      fr: "Concevoir des systèmes backend évolutifs, temps réel et événementiels.",
+    },
+    items: [
       {
         id: "kafka",
         status: "in-progress",
         label: {
-          en: "Kafka",
-          fr: "Kafka",
+          en: "Apache Kafka and event-driven architecture",
+          fr: "Apache Kafka et architecture événementielle",
         },
       },
       {
         id: "websocket",
         status: "in-progress",
         label: {
-          en: "WebSocket",
-          fr: "WebSocket",
+          en: "WebSocket and real-time communication",
+          fr: "WebSocket et communication en temps réel",
         },
       },
-      
+      {
+        id: "messaging",
+        status: "planned",
+        label: {
+          en: "Asynchronous messaging and message brokers",
+          fr: "Messagerie asynchrone et courtiers de messages",
+        },
+      },
+      {
+        id: "microservices",
+        status: "planned",
+        label: {
+          en: "Microservices architecture and service communication",
+          fr: "Architecture microservices et communication entre services",
+        },
+      },
+      {
+        id: "distributed-systems",
+        status: "planned",
+        label: {
+          en: "Distributed systems fundamentals",
+          fr: "Fondamentaux des systèmes distribués",
+        },
+      },
     ],
   },
+
+  // 3. DevOps
   {
     id: "devops",
     title: {
-      en: "DevOps",
-      fr: "DevOps",
+      en: "DevOps & Cloud",
+      fr: "DevOps et Cloud",
     },
     description: {
-      en: "Shipping and running software reliably.",
-      fr: "Livrer et exploiter des logiciels de façon fiable.",
+      en: "Automating builds, deployments, and infrastructure operations.",
+      fr: "Automatiser les builds, les déploiements et les opérations d'infrastructure.",
     },
     items: [
       {
@@ -165,11 +205,18 @@ const learningPathDefs: LearningPathDef[] = [
         id: "cicd",
         status: "in-progress",
         label: {
-          en: "CI/CD pipelines",
-          fr: "Pipelines CI/CD",
+          en: "CI/CD pipelines and automation",
+          fr: "Pipelines CI/CD et automatisation",
         },
       },
-      
+      {
+        id: "jenkins",
+        status: "planned",
+        label: {
+          en: "Jenkins and CI/CD pipeline automation",
+          fr: "Jenkins et automatisation des pipelines CI/CD",
+        },
+      },
       {
         id: "cloud",
         status: "planned",
@@ -183,11 +230,13 @@ const learningPathDefs: LearningPathDef[] = [
         status: "planned",
         label: {
           en: "Deployment, monitoring, and infrastructure automation",
-          fr: "Déploiement, monitoring et automatisation de l'infrastructure",
+          fr: "Déploiement, supervision et automatisation de l'infrastructure",
         },
       },
     ],
   },
+
+  // 4. AI Engineering
   {
     id: "ai",
     title: {
@@ -195,8 +244,8 @@ const learningPathDefs: LearningPathDef[] = [
       fr: "Ingénierie de l'IA",
     },
     description: {
-      en: "Exploring what artificial intelligence makes possible.",
-      fr: "Explorer ce que l'intelligence artificielle rend possible.",
+      en: "Learning to build practical applications powered by AI.",
+      fr: "Apprendre à concevoir des applications concrètes basées sur l'IA.",
     },
     items: [
       {
@@ -253,7 +302,7 @@ const learningPathDefs: LearningPathDef[] = [
 
 function localize(lang: Lang): LearningPath[] {
   return learningPathDefs.map((path) => ({
-    id: path.id,
+    id: path.id as LearningPath["id"],
     title: path.title[lang],
     description: path.description[lang],
     items: path.items.map(

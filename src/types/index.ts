@@ -101,7 +101,7 @@ export interface LearningItem {
 }
 
 export interface LearningPath {
-  id: "fullstack-java" | "devops" | "ai";
+  id: "fullstack-java" | "devops"| "backend-distributed-systems" | "ai";
   title: string;
   description: string;
   items: LearningItem[];
