@@ -76,11 +76,27 @@ const learningPathDefs: LearningPathDef[] = [
         },
       },
       {
+        id: "mongodb",
+        status: "completed",
+        label: {
+          en: "NoSQL and MongoDB",
+          fr: "NoSQL et MongoDB",
+        },
+      },
+      {
         id: "angular",
         status: "completed",
         label: {
           en: "Frontend integration with Angular",
           fr: "Intégration frontend avec Angular",
+        },
+      },
+      {
+        id: "reactjs",
+        status: "completed",
+        label: {
+          en: "ReactJS",
+          fr: "ReactJS",
         },
       },
       {
@@ -91,6 +107,23 @@ const learningPathDefs: LearningPathDef[] = [
           fr: "Tests, architecture logicielle et bonnes pratiques",
         },
       },
+      {
+        id: "kafka",
+        status: "in-progress",
+        label: {
+          en: "Kafka",
+          fr: "Kafka",
+        },
+      },
+      {
+        id: "websocket",
+        status: "in-progress",
+        label: {
+          en: "WebSocket",
+          fr: "WebSocket",
+        },
+      },
+      
     ],
   },
   {
@@ -106,7 +139,7 @@ const learningPathDefs: LearningPathDef[] = [
     items: [
       {
         id: "linux",
-        status: "planned",
+        status: "in-progress",
         label: {
           en: "Linux and command-line fundamentals",
           fr: "Fondamentaux de Linux et de la ligne de commande",
@@ -136,6 +169,7 @@ const learningPathDefs: LearningPathDef[] = [
           fr: "Pipelines CI/CD",
         },
       },
+      
       {
         id: "cloud",
         status: "planned",
@@ -167,7 +201,7 @@ const learningPathDefs: LearningPathDef[] = [
     items: [
       {
         id: "python",
-        status: "planned",
+        status: "in-progress",
         label: {
           en: "Python for AI development",
           fr: "Python pour le développement IA",
