@@ -211,7 +211,7 @@ const learningPathDefs: LearningPathDef[] = [
       },
       {
         id: "jenkins",
-        status: "planned",
+        status: "in-progress",
         label: {
           en: "Jenkins and CI/CD pipeline automation",
           fr: "Jenkins et automatisation des pipelines CI/CD",
