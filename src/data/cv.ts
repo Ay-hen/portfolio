@@ -25,8 +25,8 @@ const BASE = import.meta.env.BASE_URL;
 
 /**
  * Files live in `public/`, so Vite serves them as-is at the site root:
- *   public/english_CV/HENNANI_AYOUB_BRAHIM_CV.pdf
- *   public/french_CV/HENNANI_AYOUB_BRAHIM_CV.pdf
+ *   public/cv_eng/HENNANI_AYOUB_BRAHIM_CV.pdf
+ *   public/cv_fr/HENNANI_AYOUB_BRAHIM_CV.pdf
  *
  * Both PDFs share the same name on disk, so `downloadName` gives each one a
  * distinct, descriptive name when saved (the files themselves are untouched).
@@ -35,15 +35,15 @@ const BASE = import.meta.env.BASE_URL;
 export const cvFiles: Record<Lang, CvFile> = {
   en: {
     lang: "en",
-    href: `${BASE}english_CV/HENNANI_AYOUB_BRAHIM_CV.pdf`,
-    downloadName: "CV-Ayoub-Hennani-EN.pdf",
+    href: `${BASE}cv_eng/HENNANI_AYOUB_BRAHIM_CV.pdf`,
+    downloadName: "CV_HENNANI_AYOUB_BRAHIM_EN.pdf",
     label: "Download CV (English)",
     languageName: "English",
   },
   fr: {
     lang: "fr",
-    href: `${BASE}french_CV/HENNANI_AYOUB_BRAHIM_CV.pdf`,
-    downloadName: "CV-Ayoub-Hennani-FR.pdf",
+    href: `${BASE}cv_fr/HENNANI_AYOUB_BRAHIM_CV.pdf`,
+    downloadName: "CV_HENNANI_AYOUB_BRAHIM_FR.pdf",
     label: "Télécharger le CV (Français)",
     languageName: "Français",
   },
