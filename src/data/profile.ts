@@ -22,17 +22,17 @@ const SHARED = {
 export const profileByLang: Record<Lang, Profile> = {
   fr: {
     ...SHARED,
-    title: "Ingénieur Logiciel | Développeur Full-Stack",
+    title: "Junior DevOps Engineer | Ingénieur Logiciel | Développeur Full-Stack",
     location: "Maroc",
-    cvFile: "/french_CV/HENNANI_AYOUB_BRAHIM_CV.pdf",
+    cvFile: "/cv_fr/HENNANI_AYOUB_BRAHIM_CV.pdf",
     summary:
       "Ingénieur logiciel Full-Stack avec une solide expertise backend Java/Spring Boot, doublée d'une maîtrise des écosystèmes Angular et ReactJS. Reconnu pour la conception d'architectures REST sécurisées et performantes, l'optimisation de bases de données critiques et la livraison de solutions robustes en environnement Agile, du cadrage technique jusqu'à la mise en production.",
   },
   en: {
     ...SHARED,
-    title: "Software Engineer | Full-Stack Developer",
+    title: "Junior DevOps Engineer | Software Engineer | Full-Stack Developer",
     location: "Morocco",
-    cvFile: "/english_CV/HENNANI_AYOUB_BRAHIM_CV.pdf",
+    cvFile: "/cv_eng/HENNANI_AYOUB_BRAHIM_CV.pdf",
     summary:
       "Full-stack software engineer with strong backend expertise in Java/Spring Boot, combined with solid command of the Angular and ReactJS ecosystems. Known for designing secure, high-performance REST architectures, optimizing critical databases, and delivering robust solutions in Agile environments — from technical scoping through to production.",
   },
