@@ -49,4 +49,5 @@ export const cvFiles: Record<Lang, CvFile> = {
   },
 };
 
+
 export const cvList: CvFile[] = [cvFiles.en, cvFiles.fr];
