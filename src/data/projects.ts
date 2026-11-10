@@ -26,13 +26,25 @@ const SHARED = {
     githubUrl: "https://github.com/Ay-hen/Web-Bank-App",
     relatedExperienceId: "web-bank-app",
   },
-  lenscape: {
-    id: "lenscape",
-    name: "Lenscape",
-    technologies: ["Java", "Spring Boot", "Spring Security", "Angular", "MongoDB", "JWT"],
-    githubUrl: "https://github.com/Ay-hen/lenscape",
-    relatedExperienceId: "lenscape",
-  },
+  
+lenscape: {
+  id: "lenscape",
+  name: "Lenscape",
+  technologies: [
+    "Java 17",
+    "Spring Boot",
+    "Spring Security",
+    "Angular",
+    "MongoDB",
+    "JWT",
+    "Apache Kafka",
+    "WebSocket/STOMP",
+    "Docker",
+  ],
+  githubUrl: "https://github.com/Ay-hen/lenscape",
+  relatedExperienceId: "photography",
+},
+
   expium: {
     id: "expium",
     name: "Expium",
@@ -70,19 +82,22 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
       architecture:
         "Backend Spring Boot / Spring Security / JPA avec persistance PostgreSQL, exposé via des APIs REST documentées et consommé par un client web Angular et une application mobile Android (Kotlin).",
     },
-    {
-      ...SHARED.lenscape,
-      tagline: "Réservation de photographes — clients & professionnels",
-      purpose:
-        "Développer une plateforme de réservation mettant en relation clients et photographes, avec gestion des disponibilités et des réservations, réalisée lors d'un stage (PFA) chez 2MOROCCO.",
-      features: [
-        "Système de réservation et gestion des disponibilités",
-        "Architecture multi-rôles pour clients et photographes",
-        "Validation automatisée des réservations et sécurisation JWT",
-      ],
-      architecture:
-        "Application Angular côté client, API REST Spring Boot sécurisée par Spring Security/JWT, persistance des données via MongoDB.",
-    },
+    
+{
+  ...SHARED.lenscape,
+  tagline: "Plateforme de réservation de photographes — clients & professionnels",
+  purpose:
+    "Concevoir et faire évoluer Lenscape, une plateforme de mise en relation entre clients et photographes professionnels, intégrant un système de réservation et un espace de gestion dédié aux photographes.",
+  features: [
+    "Moteur de réservation intégrant les disponibilités, les tarifs et les règles métier",
+    "Espace photographe pour gérer les réservations, le calendrier et les services",
+    "Messagerie en temps réel avec WebSocket/STOMP et notifications via Apache Kafka",
+    "Sécurisation des APIs REST avec Spring Security, JWT et authentification OTP",
+  ],
+  architecture:
+    "Backend Java 17 / Spring Boot exposant des APIs REST sécurisées avec Spring Security et JWT, frontend Angular, persistance MongoDB, communication temps réel via WebSocket/STOMP et notifications asynchrones avec Apache Kafka. Conteneurisation avec Docker.",
+},
+
     {
       ...SHARED.expium,
       tagline: "Réseau social — partage de contenu en temps réel",
@@ -124,19 +139,22 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
         "Spring Boot / Spring Security / JPA backend with PostgreSQL persistence, exposed via documented REST APIs and consumed by an Angular web client and a Kotlin Android app.",
     },
     
-    {
-      ...SHARED.lenscape,
-      tagline: "Photographer booking — clients & professionals",
-      purpose:
-        "Build a booking platform connecting clients and photographers, with availability and reservation management, built during an internship (PFA) at 2MOROCCO.",
-      features: [
-        "Booking system and availability management",
-        "Multi-role architecture for clients and photographers",
-        "Automated booking validation and JWT security",
-      ],
-      architecture:
-        "Angular client application, Spring Boot REST API secured with Spring Security/JWT, data persisted in MongoDB.",
-    },
+    
+{
+  ...SHARED.lenscape,
+  tagline: "Photographer booking platform — clients & professionals",
+  purpose:
+    "Designed and enhanced Lenscape, a platform connecting customers with professional photographers, featuring a booking system and a dedicated photographer management space.",
+  features: [
+    "Booking engine handling availability, pricing, and business rules",
+    "Photographer dashboard for managing bookings, calendars, and services",
+    "Real-time messaging with WebSocket/STOMP and asynchronous notifications using Apache Kafka",
+    "Secured REST APIs with Spring Security, JWT, and OTP authentication",
+  ],
+  architecture:
+    "Java 17 / Spring Boot backend exposing REST APIs secured with Spring Security and JWT, Angular frontend, MongoDB persistence, real-time communication through WebSocket/STOMP, and asynchronous notifications using Apache Kafka. Containerized with Docker.",
+},
+
     {
       ...SHARED.expium,
       tagline: "Social network — real-time content sharing",
