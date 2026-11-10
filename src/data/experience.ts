@@ -57,6 +57,7 @@ const SHARED = {
   },
 };
 
+
 export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
   fr: [
     {
