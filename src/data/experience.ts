@@ -45,7 +45,7 @@ const SHARED = {
       "MongoDB",
       "JWT",
     ],
-    githubUrl: "https://github.com/Ay-hen/Photography",
+    githubUrl: "https://github.com/Ay-hen/lenscape",
   },
   expium: {
     id: "expium",
