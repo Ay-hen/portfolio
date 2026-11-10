@@ -33,7 +33,7 @@ const SHARED = {
     ],
     githubUrl: "https://github.com/Ay-hen/Web-Bank-App",
   },
-  
+
   lenscape: {
     id: "lenscape",
     organization: "2MOROCCO",
