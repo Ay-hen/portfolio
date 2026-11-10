@@ -83,20 +83,20 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
         "Backend Spring Boot / Spring Security / JPA avec persistance PostgreSQL, exposé via des APIs REST documentées et consommé par un client web Angular et une application mobile Android (Kotlin).",
     },
     
-{
-  ...SHARED.lenscape,
-  tagline: "Plateforme de réservation de photographes — clients & professionnels",
-  purpose:
-    "Concevoir et faire évoluer Lenscape, une plateforme de mise en relation entre clients et photographes professionnels, intégrant un système de réservation et un espace de gestion dédié aux photographes.",
-  features: [
-    "Moteur de réservation intégrant les disponibilités, les tarifs et les règles métier",
-    "Espace photographe pour gérer les réservations, le calendrier et les services",
-    "Messagerie en temps réel avec WebSocket/STOMP et notifications via Apache Kafka",
-    "Sécurisation des APIs REST avec Spring Security, JWT et authentification OTP",
-  ],
-  architecture:
-    "Backend Java 17 / Spring Boot exposant des APIs REST sécurisées avec Spring Security et JWT, frontend Angular, persistance MongoDB, communication temps réel via WebSocket/STOMP et notifications asynchrones avec Apache Kafka. Conteneurisation avec Docker.",
-},
+  {
+    ...SHARED.lenscape,
+    tagline: "Plateforme de réservation de photographes — clients & professionnels",
+    purpose:
+      "Concevoir et faire évoluer Lenscape, une plateforme de mise en relation entre clients et photographes professionnels, intégrant un système de réservation et un espace de gestion dédié aux photographes.",
+    features: [
+      "Moteur de réservation intégrant les disponibilités, les tarifs et les règles métier",
+      "Espace photographe pour gérer les réservations, le calendrier et les services",
+      "Messagerie en temps réel avec WebSocket/STOMP et notifications via Apache Kafka",
+      "Sécurisation des APIs REST avec Spring Security, JWT et authentification OTP",
+    ],
+    architecture:
+      "Backend Java 17 / Spring Boot exposant des APIs REST sécurisées avec Spring Security et JWT, frontend Angular, persistance MongoDB, communication temps réel via WebSocket/STOMP et notifications asynchrones avec Apache Kafka. Conteneurisation avec Docker.",
+  },
 
     {
       ...SHARED.expium,
