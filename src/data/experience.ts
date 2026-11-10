@@ -158,6 +158,7 @@ export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
         "Secured REST APIs using Spring Security, JWT, and OTP authentication.",
       ],
     },
+    
     {
       ...SHARED.expium,
       role: "Full-Stack Developer — Personal Project",
