@@ -43,6 +43,7 @@ const SHARED = {
       "Spring Security",
       "Angular",
       "MongoDB",
+      "WebSocket",
       "JWT",
     ],
     githubUrl: "https://github.com/Ay-hen/lenscape",
