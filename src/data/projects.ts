@@ -140,20 +140,20 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
     },
     
     
-{
-  ...SHARED.lenscape,
-  tagline: "Photographer booking platform — clients & professionals",
-  purpose:
-    "Designed and enhanced Lenscape, a platform connecting customers with professional photographers, featuring a booking system and a dedicated photographer management space.",
-  features: [
-    "Booking engine handling availability, pricing, and business rules",
-    "Photographer dashboard for managing bookings, calendars, and services",
-    "Real-time messaging with WebSocket/STOMP and asynchronous notifications using Apache Kafka",
-    "Secured REST APIs with Spring Security, JWT, and OTP authentication",
-  ],
-  architecture:
-    "Java 17 / Spring Boot backend exposing REST APIs secured with Spring Security and JWT, Angular frontend, MongoDB persistence, real-time communication through WebSocket/STOMP, and asynchronous notifications using Apache Kafka. Containerized with Docker.",
-},
+    {
+      ...SHARED.lenscape,
+      tagline: "Photographer booking platform — clients & professionals",
+      purpose:
+        "Designed and enhanced Lenscape, a platform connecting customers with professional photographers, featuring a booking system and a dedicated photographer management space.",
+      features: [
+        "Booking engine handling availability, pricing, and business rules",
+        "Photographer dashboard for managing bookings, calendars, and services",
+        "Real-time messaging with WebSocket/STOMP and asynchronous notifications using Apache Kafka",
+        "Secured REST APIs with Spring Security, JWT, and OTP authentication",
+      ],
+      architecture:
+        "Java 17 / Spring Boot backend exposing REST APIs secured with Spring Security and JWT, Angular frontend, MongoDB persistence, real-time communication through WebSocket/STOMP, and asynchronous notifications using Apache Kafka. Containerized with Docker.",
+    },
 
     {
       ...SHARED.expium,
