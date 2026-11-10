@@ -123,6 +123,7 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
       architecture:
         "Spring Boot / Spring Security / JPA backend with PostgreSQL persistence, exposed via documented REST APIs and consumed by an Angular web client and a Kotlin Android app.",
     },
+    
     {
       ...SHARED.lenscape,
       tagline: "Photographer booking — clients & professionals",
