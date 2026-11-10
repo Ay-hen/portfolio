@@ -26,12 +26,12 @@ const SHARED = {
     githubUrl: "https://github.com/Ay-hen/Web-Bank-App",
     relatedExperienceId: "web-bank-app",
   },
-  photography: {
-    id: "photography",
-    name: "Photography",
+  lenscape: {
+    id: "lenscape",
+    name: "Lenscape",
     technologies: ["Java", "Spring Boot", "Spring Security", "Angular", "MongoDB", "JWT"],
-    githubUrl: "https://github.com/Ay-hen/Photography",
-    relatedExperienceId: "photography",
+    githubUrl: "https://github.com/Ay-hen/lenscape",
+    relatedExperienceId: "lenscape",
   },
   expium: {
     id: "expium",
@@ -71,7 +71,7 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
         "Backend Spring Boot / Spring Security / JPA avec persistance PostgreSQL, exposé via des APIs REST documentées et consommé par un client web Angular et une application mobile Android (Kotlin).",
     },
     {
-      ...SHARED.photography,
+      ...SHARED.lenscape,
       tagline: "Réservation de photographes — clients & professionnels",
       purpose:
         "Développer une plateforme de réservation mettant en relation clients et photographes, avec gestion des disponibilités et des réservations, réalisée lors d'un stage (PFA) chez 2MOROCCO.",
@@ -124,7 +124,7 @@ export const projectsByLang: Record<Lang, ProjectEntry[]> = {
         "Spring Boot / Spring Security / JPA backend with PostgreSQL persistence, exposed via documented REST APIs and consumed by an Angular web client and a Kotlin Android app.",
     },
     {
-      ...SHARED.photography,
+      ...SHARED.lenscape,
       tagline: "Photographer booking — clients & professionals",
       purpose:
         "Build a booking platform connecting clients and photographers, with availability and reservation management, built during an internship (PFA) at 2MOROCCO.",
