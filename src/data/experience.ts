@@ -34,8 +34,8 @@ const SHARED = {
     githubUrl: "https://github.com/Ay-hen/Web-Bank-App",
   },
   
-  photography: {
-    id: "photography",
+  lenscape: {
+    id: "lenscape",
     organization: "2MOROCCO",
     type: "stage" as const,
     technologies: [
@@ -91,7 +91,7 @@ export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
       ],
     },{
 
-      ...SHARED.photography,
+      ...SHARED.lenscape,
       role: "Développeur Full-Stack — Stage PFA",
       location: "Rabat, Maroc",
       period: "Avril — Juin 2024",
@@ -145,7 +145,7 @@ export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
       ],
     },
     {
-      ...SHARED.photography,
+      ...SHARED.lenscape,
       role: "Full-Stack Developer — Internship",
       location: "Rabat, Morocco",
       period: "Apr — Jun 2024",
@@ -158,7 +158,7 @@ export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
         "Secured REST APIs using Spring Security, JWT, and OTP authentication.",
       ],
     },
-    
+
     {
       ...SHARED.expium,
       role: "Full-Stack Developer — Personal Project",
