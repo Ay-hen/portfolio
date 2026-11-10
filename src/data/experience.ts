@@ -33,21 +33,25 @@ const SHARED = {
     ],
     githubUrl: "https://github.com/Ay-hen/Web-Bank-App",
   },
+  
   photography: {
     id: "photography",
     organization: "2MOROCCO",
     type: "stage" as const,
     technologies: [
-      "Java",
+      "Java 17",
       "Spring Boot",
       "Spring Security",
       "Angular",
       "MongoDB",
-      "WebSocket",
       "JWT",
+      "Apache Kafka",
+      "WebSocket/STOMP",
+      "Docker",
     ],
     githubUrl: "https://github.com/Ay-hen/lenscape",
   },
+
   expium: {
     id: "expium",
     organization: "Expium",
@@ -85,18 +89,19 @@ export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
         "Implémentation de JWT stateless et sécurisation des accès avec Spring Security.",
         "Extension mobile de la solution avec Kotlin sous Android Studio.",
       ],
-    },
-    {
+    },{
+
       ...SHARED.photography,
       role: "Développeur Full-Stack — Stage PFA",
       location: "Rabat, Maroc",
       period: "Avril — Juin 2024",
       description:
-        "Développement d'une plateforme de réservation de photographes avec gestion des utilisateurs, disponibilités et réservations.",
+        "Conception et évolution de Lenscape, une plateforme de mise en relation entre clients et photographes professionnels, intégrant un système de réservation et un espace de gestion dédié aux photographes.",
       highlights: [
-        "Développement du système de réservation et de gestion des disponibilités.",
-        "Mise en place d'une architecture multi-rôles pour clients et photographes.",
-        "Automatisation des validations et sécurisation JWT/Spring Security.",
+        "Développement du moteur de réservation : disponibilités, tarifs et règles métier.",
+        "Conception d'un espace photographe pour gérer les réservations, le calendrier et les services.",
+        "Implémentation d'une messagerie temps réel avec WebSocket/STOMP et de notifications avec Apache Kafka.",
+        "Sécurisation des API REST avec Spring Security, JWT et authentification OTP.",
       ],
     },
     {
@@ -145,11 +150,12 @@ export const experiencesByLang: Record<Lang, ExperienceEntry[]> = {
       location: "Rabat, Morocco",
       period: "Apr — Jun 2024",
       description:
-        "Built a photographer booking platform with user, availability and reservation management.",
+        "Designed and enhanced Lenscape, a platform connecting customers with professional photographers, featuring a booking system and a dedicated photographer management space.",
       highlights: [
-        "Built the booking system and availability management.",
-        "Implemented a multi-role architecture for clients and photographers.",
-        "Automated booking validation and secured access with JWT/Spring Security.",
+        "Developed the booking engine, including availability, pricing, and business rules.",
+        "Designed a photographer dashboard to manage bookings, calendars, and services.",
+        "Implemented real-time messaging using WebSocket/STOMP and notifications with Apache Kafka.",
+        "Secured REST APIs using Spring Security, JWT, and OTP authentication.",
       ],
     },
     {
