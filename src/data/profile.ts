@@ -5,7 +5,7 @@ import type { Lang } from "../i18n/detectLang";
 const SHARED = {
   name: "Hennani Ayoub Brahim",
   email: "ayoubbrahim.hennanii@gmail.com",
-  phone: "+212 7 22 30 79 15",
+  phone: "+212 6 14 77 82 00",
   github: "https://github.com/Ay-hen",
   linkedin: "https://www.linkedin.com/in/ayoub-hen",
   heroKeywords: [
